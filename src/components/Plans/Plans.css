@@ -24,3 +24,8 @@
   width: 500px;
   margin: 50px auto;
 }
+
+.adjustFont {
+  font-weight: bold;
+  font-size: larger;
+}

@@ -21,30 +21,32 @@ function Budget(props) {
   };
   return (
     <div>
-      <Form.Label>Enter Your Budget(min 300, max 100.000)</Form.Label>
-      <Row className="align-items-center">
-        <Col xs="auto">
-          <InputGroup>
-            <InputGroup.Text>$</InputGroup.Text>
-            <FormControl
-              onInput={checkBudget}
-              type="number"
-              min="300"
-              max="100000"
-              step="50"
-            />
-          </InputGroup>
-        </Col>
-        <Col xs="auto">
-          <Button
-            variant="primary"
-            disabled={disabledState}
-            onClick={props.moveToCity}
-          >
-            Select Cities
-          </Button>
-        </Col>
-      </Row>
+      <div>
+        <Form.Label>Enter Your Budget(min 300, max 100.000)</Form.Label>
+        <Row>
+          <Col xs="auto">
+            <InputGroup>
+              <InputGroup.Text>$</InputGroup.Text>
+              <FormControl
+                onInput={checkBudget}
+                type="number"
+                min="300"
+                max="100000"
+                step="50"
+              />
+            </InputGroup>
+          </Col>
+          <Col xs="auto">
+            <Button
+              variant="primary"
+              disabled={disabledState}
+              onClick={props.moveToCity}
+            >
+              Select Cities
+            </Button>
+          </Col>
+        </Row>
+      </div>
     </div>
   );
 }

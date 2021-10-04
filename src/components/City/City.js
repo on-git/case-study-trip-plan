@@ -21,7 +21,6 @@ function City(props) {
   };
   const onSendCities = () => {
     const sum = cityArr.reduce((p_sum, a) => p_sum + a.price, 0);
-    console.log(sum);
     if (cityArr.length < 3) {
       showCityAlert(true);
     } else if (sum > props.getBudget) {
