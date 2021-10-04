@@ -1,0 +1,25 @@
+.budgetState {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.budgetState label {
+  margin: 0;
+}
+
+.cities {
+  overflow: auto;
+  height: 200px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.cityRow {
+  justify-content: space-between;
+}
+
+.cityInput {
+  margin-right: 10px;
+}
